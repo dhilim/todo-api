@@ -161,48 +161,6 @@ DELETE /api/todos/{id}
 
 You can test the API using tools like Postman, curl, or any HTTP client.
 
-### Example curl commands:
-
-**Get all todos:**
-```bash
-curl -X GET http://localhost:8000/api/todos
-```
-
-**Get todos for user 1:**
-```bash
-curl -X GET "http://localhost:8000/api/todos?userId=1"
-```
-
-**Get todos for user 1 (dedicated endpoint):**
-```bash
-curl -X GET "http://localhost:8000/api/users/1/todos"
-```
-
-**Create a new todo:**
-```bash
-curl -X POST http://localhost:8000/api/todos \
-  -H "Content-Type: application/json" \
-  -d '{
-    "todo": "Test todo item",
-    "completed": false,
-    "userId": 1
-  }'
-```
-
-**Update a todo:**
-```bash
-curl -X PUT http://localhost:8000/api/todos/1 \
-  -H "Content-Type: application/json" \
-  -d '{
-    "completed": true
-  }'
-```
-
-**Delete a todo:**
-```bash
-curl -X DELETE http://localhost:8000/api/todos/1
-```
-
 ## Database Structure
 
 The `todos` table contains the following fields:

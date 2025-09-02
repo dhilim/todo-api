@@ -19,7 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// Todo API Routes
+// API Routes
 Route::apiResource('todos', TodoController::class);
 
 // Additional route for fetching todos by user
