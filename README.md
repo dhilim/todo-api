@@ -1,6 +1,6 @@
 # Todo List API
 
-A Laravel 8-based Todo List API that follows the structure and behavior described in [dummyjson.com/docs/todos](https://dummyjson.com/docs/todos).
+A Laravel 12-based Todo List API that follows the structure and behavior described in [dummyjson.com/docs/todos](https://dummyjson.com/docs/todos).
 
 ## Features
 
